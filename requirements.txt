@@ -1,0 +1,6 @@
+Pillow
+numpy
+tensorflow
+streamlit
+PyQt5 
+PyQtWebEngine 
