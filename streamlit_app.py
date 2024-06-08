@@ -33,7 +33,8 @@ def predict(image, model):
 def main():
     st.write("## Binary Classification of X-Ray Images using Inception V3 (Pneumonia or Normal)")
     
-    st.write(f"{download_message}")
+    if download_message:
+        st.write(f"{download_message}")
     loaded_model = load_cached_model()
 
     st.write(loaded_model)

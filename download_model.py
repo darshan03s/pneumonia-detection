@@ -1,7 +1,6 @@
 import requests
 import os
 from dotenv import load_dotenv
-import streamlit as st
 
 load_dotenv()
 model_link = os.getenv('MODEL_URI')
@@ -10,7 +9,7 @@ def download_model():
     try:
         model_path = './model/pneu-model.keras'
         if not os.path.exists(model_path):
-            print(f"Starting download from: {model_link}", flush=True)
+            print(f"Starting model download", flush=True)
             response = requests.get(model_link)
             response.raise_for_status() 
             print(f"Response status code: {response.status_code}", flush=True)
