@@ -3,5 +3,4 @@ numpy
 tensorflow
 streamlit
 PyQt5 
-PyQtWebEngine 
 python-dotenv
