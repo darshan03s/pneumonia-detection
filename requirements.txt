@@ -1,6 +1,6 @@
 Pillow
 numpy
-tensorflow
+tensorflow==2.15
 streamlit
 PyQt5 
 python-dotenv
